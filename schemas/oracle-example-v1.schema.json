@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "title": "wordle.oracle-example/v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "example_id",
+    "identity",
+    "public_state",
+    "legal_mask_digest",
+    "optimal_tie_set",
+    "sparse_action_values"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "wordle.oracle-example/v1"},
+    "example_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "benchmark_id",
+        "view_id",
+        "tier",
+        "rules_sha256",
+        "prior_id",
+        "certificate_sha256",
+        "action_space_sha256",
+        "exposure_track"
+      ],
+      "properties": {
+        "benchmark_id": {"type": "string", "minLength": 1},
+        "view_id": {"type": "string", "minLength": 1},
+        "tier": {"type": "integer", "minimum": 1},
+        "rules_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "prior_id": {"type": "string", "minLength": 1},
+        "certificate_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "action_space_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "exposure_track": {"const": "full-compiled"}
+      }
+    },
+    "public_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "turn", "rows"],
+      "properties": {
+        "mode": {"enum": ["normal", "hard"]},
+        "turn": {"type": "integer", "minimum": 1, "maximum": 6},
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {"$ref": "#/$defs/guess_word"},
+              {"$ref": "#/$defs/marks"}
+            ],
+            "items": false,
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "maxItems": 5
+        }
+      }
+    },
+    "legal_mask_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "optimal_tie_set": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/guess_word"}
+    },
+    "sparse_action_values": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["word", "losses", "score7_total"],
+        "properties": {
+          "word": {"$ref": "#/$defs/guess_word"},
+          "losses": {"type": "integer", "minimum": 0},
+          "score7_total": {"type": "integer", "minimum": 0}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "guess_word": {"type": "string", "pattern": "^[a-z]{5}$"},
+    "marks": {"type": "string", "pattern": "^[byg]{5}$"}
+  }
+}

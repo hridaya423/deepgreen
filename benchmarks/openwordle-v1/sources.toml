@@ -1,0 +1,22 @@
+# OpenWordle-v1 source ledger. Every field is load-bearing; unknown fields
+# fail closed (see benchmarks/corpus_ledger.py). Hashes are sha256 over the
+# canonical archive bytes named by download_name.
+
+[source.scowl_v1]
+tag = "rel-2020.12.07"
+commit = "5ef55f9c42730ebe4394a78b77855468a6f15dd2"
+url = "https://codeload.github.com/en-wl/wordlist/tar.gz/5ef55f9c42730ebe4394a78b77855468a6f15dd2"
+download_name = "scowl-v1-rel-2020.12.07-5ef55f9c.tar.gz"
+sha256 = "933cd8edab9297fc8cb6358d7cb3d05a50371107d1431af61de09eaa875043ac"
+license = "SCOWL copyright notice license (permissive with notice retention)"
+license_url = "https://github.com/en-wl/wordlist/blob/v2/Copyright"
+notice = "Copyright notices retained in NOTICE-SCOWL.txt of every candidate tree."
+
+[source.wordnet_3]
+version = "3.0"
+url = "https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz"
+download_name = "WordNet-3.0.tar.gz"
+sha256 = "640db279c949a88f61f851dd54ebbb22d003f8b90b85267042ef85a3781d3a52"
+license = "WordNet 3.0 license (Princeton University, notice-retention terms)"
+license_url = "https://wordnet.princeton.edu/license-and-commercial-use"
+notice = "WordNet 3.0 license text and warranty disclaimer retained in NOTICE-WordNet.txt."

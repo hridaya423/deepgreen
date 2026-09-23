@@ -1,0 +1,33 @@
+{
+ "parameter_count": 64320,
+ "schema": "wordle.policy-spec/v3",
+ "tensor_names": [
+  "shared.letters",
+  "shared.marks",
+  "shared.positions",
+  "row.letter_mix",
+  "row.mark_mix",
+  "row.position_mix",
+  "row.sum_mix",
+  "row.max_mix",
+  "row.letter_bias",
+  "row.mark_bias",
+  "row.position_bias",
+  "board.project",
+  "board.w1",
+  "board.w2",
+  "board.b1",
+  "board.b2",
+  "board.turn_gate",
+  "word.letter_mix",
+  "word.position_mix",
+  "word.sum_mix",
+  "word.max_mix",
+  "word.key_mix",
+  "word.out_mix",
+  "word.letter_bias",
+  "score.bilinear",
+  "score.bias"
+ ],
+ "width": 64
+}

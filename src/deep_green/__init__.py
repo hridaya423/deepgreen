@@ -1,0 +1,1 @@
+"""Wordle champion package."""

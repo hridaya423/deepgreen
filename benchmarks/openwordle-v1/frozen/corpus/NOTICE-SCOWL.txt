@@ -1,0 +1,6 @@
+OpenWordle-v1 accepted-guess and audit lists derive from SCOWL (and friends)
+v1 rel-2020.12.07 at commit 5ef55f9c42730ebe4394a78b77855468a6f15dd2.
+Copyright (c) Kevin Atkinson and SCOWL contributors.
+The upstream copyright file permits use, copying, modification, distribution,
+and sale provided the copyright notice is retained in redistributed versions.
+Upstream license text: https://github.com/en-wl/wordlist/blob/v2/Copyright

@@ -1,0 +1,19 @@
+{
+  "name": "wordle-world-champion-web",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json && node build.mjs",
+    "test:e2e": "playwright test",
+    "contract": "playwright test && node scripts/write-contract.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
+    "@playwright/test": "1.55.1",
+    "typescript": "5.9.2"
+  }
+}

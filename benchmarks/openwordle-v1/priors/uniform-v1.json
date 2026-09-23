@@ -1,0 +1,8 @@
+{
+  "distribution": "uniform",
+  "mass_per_answer": "equal over the primary answer support",
+  "notes": "Broad diagnostic answers never receive prior mass; they exist only for catalog-exposed diagnostics.",
+  "prior_id": "uniform-v1",
+  "schema": "wordle.prior/v1",
+  "support": "answers/primary-2095.txt"
+}

@@ -1,0 +1,25 @@
+{
+  "benchmark_id": "openwordle-v1",
+  "files": {
+    "corpus/NOTICE-SCOWL.txt": "d6ea15d3bed40dab7fa3a887e7d7027388c01ff14219723e4dbab8a242902ad7",
+    "corpus/NOTICE-WordNet.txt": "98d72b1a4fc098b82345e62727965e7977d608ad75cc4bc94d8bdf3a50a05a9c",
+    "corpus/answers/broad-3048.txt": "7af9b593f500165e834a435969ab9e0c45fa9ea72db294d4d357841930cab312",
+    "corpus/answers/primary-2095.txt": "b56885a24701f73f2e475ee3139c6b89da86efe91abad1f8297947831bb7b490",
+    "corpus/intermediates/scowl-audit-35.txt": "2b59954212cc86731cb5d2bf8da223055fe451ea3261c980fceaa721c73b97b7",
+    "corpus/intermediates/wordnet-five-letter-hex.txt": "5e01e57695f9edc4f1b9b1dcbdf2fb40fadf26f229f2962b3617735751d07633",
+    "corpus/manifest.json": "d4ce25c6b7dfa97b28199cd11e85e0c9872bcdd545fc4228b83ebdfe0009db12",
+    "corpus/splits/ah-dev.txt": "f7658c289ab6627ead3f460ad28f2a27e851436635236f0a792bf6f9157e6ee5",
+    "corpus/splits/ah-test.txt": "a340241f27b48eeba0478c33470f092d4b7fb4de255fc9eca20091a36c63ab01",
+    "corpus/splits/ah-train.txt": "caa7cd5e10ea972fc84fa420851b49b87d31004057d495976ea552053e1c9c0a",
+    "corpus/tiers/tier-1024.txt": "2d8e81f0631cb16efb54a041d7e94149d9043a2623884a1d7125a4a6d2e8544d",
+    "corpus/tiers/tier-2048.txt": "46cd6201f5bf93369838de7d10af3f9ee35e29be44286d2c95ef7e0d534e2c0d",
+    "corpus/tiers/tier-2095.txt": "6335819efdb3e361b1f05eb1ea0093e7faa4a8b4f681f013f2715f7636a1072e",
+    "corpus/tiers/tier-512.txt": "ba34f912e5c27040e36bf6bacaed359bfe5785a3e9df9356e28ed4b2922667e5",
+    "corpus/words/accepted-guesses.txt": "3f8ea3e8e93b775a3716979f65bfe3474ed8fbacbbd9394a01fb93606a7ce59c",
+    "prior.json": "989c2cc5050c9b9160d426b6b413f4e010f2af2aa8017bfb46789ea320d2a168",
+    "protocol.toml": "a6bcb1b8f7e7c71ca1bb467c10f10501e105c77ad3cfe6098b67a560ddf720bb",
+    "rules.json": "22af8897e57135b68b0c9178fc79a872e27d865085387dff595ddf4ea9f615cc",
+    "views/views.json": "904a934d060f75e4492b7cd91189fa5433c8ee718b117a36c8a55bb1eb46e13e"
+  },
+  "schema": "wordle.frozen-bundle/v1"
+}

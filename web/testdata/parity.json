@@ -1,0 +1,2550 @@
+{
+ "weights_sha256": "09202c5252d8920efe5153b0fbe23a6c38bca9e4f11cce41d4667318a3e00f45",
+ "manifest_sha256": "81e98656be2a1b074cf7a31e1bdb0c38fa25c48165eb16176b336abd89a175a1",
+ "solves": [
+  {
+   "mode": "normal",
+   "word": "aback",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bybbb"
+    },
+    {
+     "guess": "clonk",
+     "marks": "ybbbg"
+    },
+    {
+     "guess": "whack",
+     "marks": "bbggg"
+    },
+    {
+     "guess": "aback",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    148,
+    3,
+    2,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "adieu",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bybgb"
+    },
+    {
+     "guess": "climb",
+     "marks": "bbgbb"
+    },
+    {
+     "guess": "adieu",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    12,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "avers",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "byyyg"
+    },
+    {
+     "guess": "shard",
+     "marks": "ybygb"
+    },
+    {
+     "guess": "avers",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    18,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "blitz",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "ybbbb"
+    },
+    {
+     "guess": "filth",
+     "marks": "byygb"
+    },
+    {
+     "guess": "blitz",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    105,
+    2,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "calla",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bgbbb"
+    },
+    {
+     "guess": "lynch",
+     "marks": "ybbyb"
+    },
+    {
+     "guess": "cabal",
+     "marks": "ggbyy"
+    },
+    {
+     "guess": "calla",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    118,
+    4,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "coder",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbygb"
+    },
+    {
+     "guess": "cupid",
+     "marks": "gbbby"
+    },
+    {
+     "guess": "ceder",
+     "marks": "gbggg"
+    },
+    {
+     "guess": "coder",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    152,
+    2,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "crane",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "byyyb"
+    },
+    {
+     "guess": "decal",
+     "marks": "byyyb"
+    },
+    {
+     "guess": "capon",
+     "marks": "gybby"
+    },
+    {
+     "guess": "crane",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    62,
+    6,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "death",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "yybyb"
+    },
+    {
+     "guess": "plant",
+     "marks": "bbgby"
+    },
+    {
+     "guess": "demob",
+     "marks": "ggbbb"
+    },
+    {
+     "guess": "death",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    35,
+    6,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "dunks",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbbg"
+    },
+    {
+     "guess": "clomp",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "kinds",
+     "marks": "ybgyg"
+    },
+    {
+     "guess": "dunks",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    346,
+    48,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "fichu",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "godly",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "cumin",
+     "marks": "yybyb"
+    },
+    {
+     "guess": "fichu",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    346,
+    34,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "fjord",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbybb"
+    },
+    {
+     "guess": "doing",
+     "marks": "yybbb"
+    },
+    {
+     "guess": "crowd",
+     "marks": "bygbg"
+    },
+    {
+     "guess": "fjord",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    105,
+    6,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "games",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bgbgg"
+    },
+    {
+     "guess": "clomp",
+     "marks": "bbbyb"
+    },
+    {
+     "guess": "gamin",
+     "marks": "gggbb"
+    },
+    {
+     "guess": "games",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    76,
+    9,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "gusto",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "ybbby"
+    },
+    {
+     "guess": "shift",
+     "marks": "ybbby"
+    },
+    {
+     "guess": "blogs",
+     "marks": "bbyyy"
+    },
+    {
+     "guess": "gusto",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    69,
+    7,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "hypos",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbbg"
+    },
+    {
+     "guess": "clomp",
+     "marks": "bbyby"
+    },
+    {
+     "guess": "ponds",
+     "marks": "yybbg"
+    },
+    {
+     "guess": "hypos",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    346,
+    5,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "lambs",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bgbbg"
+    },
+    {
+     "guess": "blind",
+     "marks": "yybbb"
+    },
+    {
+     "guess": "lambs",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    104,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "lymph",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "godly",
+     "marks": "bbbyy"
+    },
+    {
+     "guess": "lymph",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    346,
+    3,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "mound",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "godly",
+     "marks": "bgybb"
+    },
+    {
+     "guess": "bumph",
+     "marks": "byybb"
+    },
+    {
+     "guess": "mound",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    346,
+    7,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "other",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "ybygb"
+    },
+    {
+     "guess": "mound",
+     "marks": "bybbb"
+    },
+    {
+     "guess": "other",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    18,
+    2,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "plebe",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbyb"
+    },
+    {
+     "guess": "genie",
+     "marks": "bybbg"
+    },
+    {
+     "guess": "elude",
+     "marks": "ygbbg"
+    },
+    {
+     "guess": "plebe",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    203,
+    7,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "queue",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbyb"
+    },
+    {
+     "guess": "genie",
+     "marks": "bybbg"
+    },
+    {
+     "guess": "elude",
+     "marks": "ybybg"
+    },
+    {
+     "guess": "queue",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    203,
+    7,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "ragas",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bgybg"
+    },
+    {
+     "guess": "lapin",
+     "marks": "bgbbb"
+    },
+    {
+     "guess": "racks",
+     "marks": "ggbbg"
+    },
+    {
+     "guess": "ragas",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    12,
+    2,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "rubes",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbygg"
+    },
+    {
+     "guess": "build",
+     "marks": "ygbbb"
+    },
+    {
+     "guess": "rubes",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    22,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "shied",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbgy"
+    },
+    {
+     "guess": "slink",
+     "marks": "gbgbb"
+    },
+    {
+     "guess": "shied",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    31,
+    2,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "soapy",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bybby"
+    },
+    {
+     "guess": "shawl",
+     "marks": "gbgbb"
+    },
+    {
+     "guess": "spank",
+     "marks": "gygbb"
+    },
+    {
+     "guess": "scamp",
+     "marks": "gbgby"
+    },
+    {
+     "guess": "soapy",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    61,
+    8,
+    2,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "suety",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "ybbyy"
+    },
+    {
+     "guess": "spoil",
+     "marks": "gbbbb"
+    },
+    {
+     "guess": "scent",
+     "marks": "gbgby"
+    },
+    {
+     "guess": "suety",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    31,
+    3,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "tares",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "tills",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "gbbbg"
+    },
+    {
+     "guess": "filth",
+     "marks": "bggyb"
+    },
+    {
+     "guess": "tills",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    27,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "tramp",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "gyybb"
+    },
+    {
+     "guess": "licit",
+     "marks": "bbbby"
+    },
+    {
+     "guess": "tramp",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    10,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "unity",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "ybbbb"
+    },
+    {
+     "guess": "filth",
+     "marks": "bybgb"
+    },
+    {
+     "guess": "unity",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    105,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "normal",
+   "word": "whens",
+   "rows": [
+    {
+     "guess": "tares",
+     "marks": "bbbyg"
+    },
+    {
+     "guess": "plonk",
+     "marks": "bbbgb"
+    },
+    {
+     "guess": "veins",
+     "marks": "bybgg"
+    },
+    {
+     "guess": "whens",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    113,
+    5,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "aback",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbgbb"
+    },
+    {
+     "guess": "clans",
+     "marks": "ybgbb"
+    },
+    {
+     "guess": "beach",
+     "marks": "ybggb"
+    },
+    {
+     "guess": "aback",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    169,
+    4,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "adieu",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbybb"
+    },
+    {
+     "guess": "flack",
+     "marks": "bbybb"
+    },
+    {
+     "guess": "gassy",
+     "marks": "bybbb"
+    },
+    {
+     "guess": "abide",
+     "marks": "gbgyy"
+    },
+    {
+     "guess": "adieu",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    474,
+    178,
+    22,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "avers",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "byybb"
+    },
+    {
+     "guess": "farce",
+     "marks": "byyby"
+    },
+    {
+     "guess": "regal",
+     "marks": "yybyb"
+    },
+    {
+     "guess": "adder",
+     "marks": "gbbyy"
+    },
+    {
+     "guess": "avers",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    209,
+    18,
+    2,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "blitz",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "ybbbb"
+    },
+    {
+     "guess": "bidet",
+     "marks": "gybby"
+    },
+    {
+     "guess": "blitz",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    353,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "calla",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbybb"
+    },
+    {
+     "guess": "flack",
+     "marks": "byyyb"
+    },
+    {
+     "guess": "calla",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    474,
+    18,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "coder",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bybbb"
+    },
+    {
+     "guess": "scrod",
+     "marks": "byyyy"
+    },
+    {
+     "guess": "coder",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    418,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "crane",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bggbb"
+    },
+    {
+     "guess": "drags",
+     "marks": "bggbb"
+    },
+    {
+     "guess": "crank",
+     "marks": "ggggb"
+    },
+    {
+     "guess": "crane",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    59,
+    21,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "death",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "ybgbb"
+    },
+    {
+     "guess": "slate",
+     "marks": "bbggy"
+    },
+    {
+     "guess": "neath",
+     "marks": "bgggg"
+    },
+    {
+     "guess": "death",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    67,
+    3,
+    2,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "dunks",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "clown",
+     "marks": "bbbby"
+    },
+    {
+     "guess": "unfed",
+     "marks": "yybby"
+    },
+    {
+     "guess": "dungs",
+     "marks": "gggbg"
+    },
+    {
+     "guess": "dunks",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    1079,
+    122,
+    2,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "fichu",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "clown",
+     "marks": "ybbbb"
+    },
+    {
+     "guess": "ducks",
+     "marks": "bygbb"
+    },
+    {
+     "guess": "fichu",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    1079,
+    34,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "fjord",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bybbb"
+    },
+    {
+     "guess": "scrod",
+     "marks": "bbyyg"
+    },
+    {
+     "guess": "rowed",
+     "marks": "yybbg"
+    },
+    {
+     "guess": "fjord",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    418,
+    6,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "games",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbyyb"
+    },
+    {
+     "guess": "gamin",
+     "marks": "gggbb"
+    },
+    {
+     "guess": "gamed",
+     "marks": "ggggb"
+    },
+    {
+     "guess": "games",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    97,
+    2,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "gusto",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "ybbbb"
+    },
+    {
+     "guess": "bidet",
+     "marks": "bbbby"
+    },
+    {
+     "guess": "sloth",
+     "marks": "ybygb"
+    },
+    {
+     "guess": "costs",
+     "marks": "byggb"
+    },
+    {
+     "guess": "gusto",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    353,
+    66,
+    4,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "hypos",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbby"
+    },
+    {
+     "guess": "piked",
+     "marks": "ybbbb"
+    },
+    {
+     "guess": "clops",
+     "marks": "bbyyg"
+    },
+    {
+     "guess": "hypos",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    235,
+    27,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "lambs",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbyyb"
+    },
+    {
+     "guess": "gamin",
+     "marks": "bggbb"
+    },
+    {
+     "guess": "lames",
+     "marks": "gggbg"
+    },
+    {
+     "guess": "lamas",
+     "marks": "gggbg"
+    },
+    {
+     "guess": "lambs",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    97,
+    15,
+    2,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "lymph",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbyy"
+    },
+    {
+     "guess": "moped",
+     "marks": "ybybb"
+    },
+    {
+     "guess": "plumy",
+     "marks": "yybyy"
+    },
+    {
+     "guess": "lymph",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    31,
+    19,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "mound",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbyb"
+    },
+    {
+     "guess": "moles",
+     "marks": "ggbbb"
+    },
+    {
+     "guess": "mooch",
+     "marks": "ggbbb"
+    },
+    {
+     "guess": "mound",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    165,
+    3,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "other",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "yybbb"
+    },
+    {
+     "guess": "resit",
+     "marks": "yybby"
+    },
+    {
+     "guess": "outre",
+     "marks": "gbyyy"
+    },
+    {
+     "guess": "other",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    91,
+    12,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "plebe",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbby"
+    },
+    {
+     "guess": "piked",
+     "marks": "gbbyb"
+    },
+    {
+     "guess": "peens",
+     "marks": "gygbb"
+    },
+    {
+     "guess": "plebe",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    235,
+    17,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "queue",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "clown",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "sedgy",
+     "marks": "bybbb"
+    },
+    {
+     "guess": "queue",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    1079,
+    149,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "ragas",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "byybb"
+    },
+    {
+     "guess": "farce",
+     "marks": "bgybb"
+    },
+    {
+     "guess": "randy",
+     "marks": "ggbbb"
+    },
+    {
+     "guess": "ragas",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    209,
+    27,
+    6,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "rubes",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bybbb"
+    },
+    {
+     "guess": "scrod",
+     "marks": "ybybb"
+    },
+    {
+     "guess": "riles",
+     "marks": "gbbgg"
+    },
+    {
+     "guess": "ruses",
+     "marks": "ggbgg"
+    },
+    {
+     "guess": "rubes",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    418,
+    42,
+    3,
+    2,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "shied",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "clown",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "sedgy",
+     "marks": "gyybb"
+    },
+    {
+     "guess": "shied",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    1079,
+    149,
+    5,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "soapy",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbgby"
+    },
+    {
+     "guess": "leaps",
+     "marks": "bbggy"
+    },
+    {
+     "guess": "soapy",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    41,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "suety",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "ybbbb"
+    },
+    {
+     "guess": "bidet",
+     "marks": "bbbyy"
+    },
+    {
+     "guess": "vents",
+     "marks": "bybgy"
+    },
+    {
+     "guess": "suety",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    353,
+    42,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "tares",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "gyybb"
+    },
+    {
+     "guess": "tarts",
+     "marks": "gggbg"
+    },
+    {
+     "guess": "taros",
+     "marks": "gggbg"
+    },
+    {
+     "guess": "tares",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    16,
+    3,
+    2,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "tills",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "gbbbb"
+    },
+    {
+     "guess": "tines",
+     "marks": "ggbbg"
+    },
+    {
+     "guess": "tilts",
+     "marks": "gggbg"
+    },
+    {
+     "guess": "tills",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    110,
+    4,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "tramp",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "unity",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "ybbbb"
+    },
+    {
+     "guess": "bidet",
+     "marks": "bybby"
+    },
+    {
+     "guess": "stink",
+     "marks": "bygyb"
+    },
+    {
+     "guess": "unity",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    353,
+    24,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  },
+  {
+   "mode": "hard",
+   "word": "whens",
+   "rows": [
+    {
+     "guess": "tramp",
+     "marks": "bbbbb"
+    },
+    {
+     "guess": "clown",
+     "marks": "bbbyy"
+    },
+    {
+     "guess": "wends",
+     "marks": "gyybg"
+    },
+    {
+     "guess": "whens",
+     "marks": "ggggg"
+    }
+   ],
+   "consistent_counts": [
+    1079,
+    18,
+    1,
+    1
+   ],
+   "outcome": "SOLVED",
+   "certification": "CERTIFIED"
+  }
+ ],
+ "assists": [
+  {
+   "mode": "normal",
+   "word": "aback",
+   "consistent_counts": [
+    148,
+    3,
+    2,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bybbb",
+     "pending": "clonk",
+     "consistent_count": 148,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybbbg",
+     "pending": "whack",
+     "consistent_count": 3,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbggg",
+     "pending": "aback",
+     "consistent_count": 2,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "normal",
+   "word": "adieu",
+   "consistent_counts": [
+    12,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bybgb",
+     "pending": "climb",
+     "consistent_count": 12,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbgbb",
+     "pending": "adieu",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "normal",
+   "word": "avers",
+   "consistent_counts": [
+    18,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "byyyg",
+     "pending": "shard",
+     "consistent_count": 18,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybygb",
+     "pending": "avers",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "normal",
+   "word": "blitz",
+   "consistent_counts": [
+    105,
+    2,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybbbb",
+     "pending": "filth",
+     "consistent_count": 105,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "byygb",
+     "pending": "blitz",
+     "consistent_count": 2,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "normal",
+   "word": "calla",
+   "consistent_counts": [
+    118,
+    4,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bgbbb",
+     "pending": "lynch",
+     "consistent_count": 118,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybbyb",
+     "pending": "cabal",
+     "consistent_count": 4,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggbyy",
+     "pending": "calla",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "normal",
+   "word": "coder",
+   "consistent_counts": [
+    152,
+    2,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbygb",
+     "pending": "cupid",
+     "consistent_count": 152,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "gbbby",
+     "pending": "ceder",
+     "consistent_count": 2,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "gbggg",
+     "pending": "coder",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "normal",
+   "word": "crane",
+   "consistent_counts": [
+    62,
+    6,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "byyyb",
+     "pending": "decal",
+     "consistent_count": 62,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "byyyb",
+     "pending": "capon",
+     "consistent_count": 6,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "gybby",
+     "pending": "crane",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "normal",
+   "word": "death",
+   "consistent_counts": [
+    35,
+    6,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "yybyb",
+     "pending": "plant",
+     "consistent_count": 35,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbgby",
+     "pending": "demob",
+     "consistent_count": 6,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggbbb",
+     "pending": "death",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "word": "aback",
+   "consistent_counts": [
+    169,
+    4,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbgbb",
+     "pending": "clans",
+     "consistent_count": 169,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybgbb",
+     "pending": "beach",
+     "consistent_count": 4,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybggb",
+     "pending": "aback",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "word": "adieu",
+   "consistent_counts": [
+    474,
+    178,
+    22,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbybb",
+     "pending": "flack",
+     "consistent_count": 474,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbybb",
+     "pending": "gassy",
+     "consistent_count": 178,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bybbb",
+     "pending": "abide",
+     "consistent_count": 22,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "gbgyy",
+     "pending": "adieu",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "word": "avers",
+   "consistent_counts": [
+    209,
+    18,
+    2,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "byybb",
+     "pending": "farce",
+     "consistent_count": 209,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "byyby",
+     "pending": "regal",
+     "consistent_count": 18,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "yybyb",
+     "pending": "adder",
+     "consistent_count": 2,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "gbbyy",
+     "pending": "avers",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "word": "blitz",
+   "consistent_counts": [
+    353,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybbbb",
+     "pending": "bidet",
+     "consistent_count": 353,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "gybby",
+     "pending": "blitz",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "word": "calla",
+   "consistent_counts": [
+    474,
+    18,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbybb",
+     "pending": "flack",
+     "consistent_count": 474,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "byyyb",
+     "pending": "calla",
+     "consistent_count": 18,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "word": "coder",
+   "consistent_counts": [
+    418,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bybbb",
+     "pending": "scrod",
+     "consistent_count": 418,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "byyyy",
+     "pending": "coder",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "word": "crane",
+   "consistent_counts": [
+    59,
+    21,
+    1,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bggbb",
+     "pending": "drags",
+     "consistent_count": 59,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bggbb",
+     "pending": "crank",
+     "consistent_count": 21,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggb",
+     "pending": "crane",
+     "consistent_count": 1,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "word": "death",
+   "consistent_counts": [
+    67,
+    3,
+    2,
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybgbb",
+     "pending": "slate",
+     "consistent_count": 67,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbggy",
+     "pending": "neath",
+     "consistent_count": 3,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bgggg",
+     "pending": "death",
+     "consistent_count": 2,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  }
+ ],
+ "scripts": [
+  {
+   "mode": "normal",
+   "consistent_counts": [
+    346,
+    34,
+    0
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbbbb",
+     "pending": "godly",
+     "consistent_count": 346,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbbbb",
+     "pending": "cumin",
+     "consistent_count": 34,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "bbbbb",
+     "pending": null,
+     "consistent_count": 0,
+     "terminal": false,
+     "outcome": null
+    }
+   ]
+  },
+  {
+   "mode": "hard",
+   "consistent_counts": [
+    1
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tramp",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ggggg",
+     "pending": null,
+     "consistent_count": 1,
+     "terminal": true,
+     "outcome": "WON"
+    }
+   ]
+  },
+  {
+   "mode": "normal",
+   "consistent_counts": [
+    27,
+    0
+   ],
+   "steps": [
+    {
+     "marks": null,
+     "pending": "tares",
+     "consistent_count": 5022,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "ybybb",
+     "pending": "fount",
+     "consistent_count": 27,
+     "terminal": false,
+     "outcome": null
+    },
+    {
+     "marks": "gbgby",
+     "pending": null,
+     "consistent_count": 0,
+     "terminal": false,
+     "outcome": null
+    }
+   ]
+  }
+ ]
+}

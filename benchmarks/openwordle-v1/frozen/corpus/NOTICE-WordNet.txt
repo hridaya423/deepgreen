@@ -1,0 +1,8 @@
+OpenWordle-v1 answer-set filtering uses Princeton WordNet 3.0 five-letter
+single-token lemmas parsed per the WordNet 3.0 file-format specification.
+WordNet 3.0 Copyright 2006 by Princeton University. All rights reserved.
+This software and database are licensed under the WordNet 3.0 terms reproduced
+at https://wordnet.princeton.edu/license-and-commercial-use; use, copying,
+modification, and distribution without fee are permitted so long as this
+notice and the warranty disclaimer accompany any copy of the database or
+derived work.

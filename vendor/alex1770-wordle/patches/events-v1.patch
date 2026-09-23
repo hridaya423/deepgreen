@@ -1,0 +1,204 @@
+--- wordle.cpp
++++ wordle.cpp
+@@ -30,6 +30,41 @@
+ #include <fcntl.h>
+ #include <unistd.h>
+
++// ---- local addition: strict JSONL event stream (recorded in UPSTREAM.toml) ----
++static const char*eventsfn=0;
++static FILE*eventsfp=0;
++static long long event_checkpoints=0;
++static long long event_action_values=0;
++static int event_bestfirst=-2;
++static double event_cpu0=0,event_cpu1=0;
++static long long event_objective=0;
++static bool event_has_result=false;
++
++static std::string json_escape(const char*s){
++  std::string out="\"";
++  for(const char*p=s?s:"";*p;p++){
++    unsigned char c=(unsigned char)*p;
++    if(c=='"'||c=='\\'){out+='\\';out+=(char)c;}
++    else if(c<' '){char buf[8];snprintf(buf,sizeof(buf),"\\u%04x",(unsigned)c);out+=buf;}
++    else out+=(char)c;
++  }
++  out+="\"";
++  return out;
++}
++
++static void events_open(){
++  if(!eventsfn)return;
++  eventsfp=fopen(eventsfn,"w");
++  if(!eventsfp){fprintf(stderr,"Cannot open events file %s\n",eventsfn);exit(1);}
++}
++
++static void events_emit(const char*line){
++  if(!eventsfp)return;
++  fputs(line,eventsfp);
++  fputc('\n',eventsfp);
++  fflush(eventsfp);
++}
++
+ typedef unsigned char UC;
+ typedef unsigned int uint;
+ typedef signed long long int int64;
+@@ -737,6 +772,14 @@
+     int tot=sumoverpartitions(oktestwords,hwsubset,depth,testword,biggestendgame,toplevel,beta);
+
+     if(toplevel)toplevelhistory+=" "+testwords[testword];
++    if(toplevel&&eventsfp){
++      char avbuf[512];
++      snprintf(avbuf,sizeof(avbuf),
++        "{\"type\":\"action_value\",\"schema\":\"alex1770.wordle-events/v1\",\"action_index\":%d,\"word\":%s,\"bound\":%d,\"exact\":%s}",
++        testword,json_escape(testwords[testword].c_str()).c_str(),tot,tot<beta?"true":"false");
++      events_emit(avbuf);
++      event_action_values++;
++    }
+     if(toplevel&&prl>=-1){
+       double cpu2=cpu();
+       printf("First guess %s %s= %10d     %5d / %5d    dCPU = %9.2f   CPU = %9.2f\n",
+@@ -804,6 +847,9 @@
+       writeoptstats();
+       savecache();
+       nextcheckpoint+=checkpointinterval;
++      char cpbuf[256];
++      snprintf(cpbuf,sizeof(cpbuf),"{\"type\":\"checkpoint\",\"schema\":\"alex1770.wordle-events/v1\",\"generation\":%lld}",++event_checkpoints);
++      events_emit(cpbuf);
+     }
+     nextcheck+=checkinterval;
+   }
+@@ -1253,15 +1299,53 @@
+   std::sort(treeorder,treeorder+243,cmp);
+   initendgames();
+   printf("...done\n");
++}
++
++static void events_emit_error(const char*message){
++  if(!eventsfp)return;
++  char buf[512];
++  snprintf(buf,sizeof(buf),"{\"type\":\"error\",\"schema\":\"alex1770.wordle-events/v1\",\"message\":%s}",json_escape(message).c_str());
++  events_emit(buf);
++}
++
++static void events_emit_result(){
++  if(!eventsfp)return;
++  char buf[768],bestbuf[32],avbuf[32];
++  bool have_best=event_bestfirst>=-1;
++  if(event_bestfirst>=0)snprintf(bestbuf,sizeof(bestbuf),"%d",event_bestfirst);
++  else snprintf(bestbuf,sizeof(bestbuf),"null");
++  if(event_has_result&&!depthonly&&event_objective<infinity&&event_objective>=0){
++    snprintf(avbuf,sizeof(avbuf),"%.6f",(double)event_objective/(double)hiddenwords.size());
++  }else{
++    snprintf(avbuf,sizeof(avbuf),"null");
++  }
++  char obuf[32];
++  if(!event_has_result||event_objective>=infinity)snprintf(obuf,sizeof(obuf),"null");
++  else snprintf(obuf,sizeof(obuf),"%lld",event_objective);
++  snprintf(buf,sizeof(buf),
++    "{\"type\":\"result\",\"schema\":\"alex1770.wordle-events/v1\",\"objective\":%s,\"average\":%s,"
++    "\"best_first\":%s,\"nodes\":%lld,\"time_seconds\":%.2f,\"depthonly\":%s,\"checkpoints\":%lld}",
++    obuf,avbuf,bestbuf,totentries,event_cpu1,depthonly?"true":"false",event_checkpoints);
++  events_emit(buf);
+ }
+
++static void events_emit_completion(const char*reason){
++  if(!eventsfp)return;
++  if(!event_has_result)events_emit_result();
++  char buf[256];
++  snprintf(buf,sizeof(buf),
++    "{\"type\":\"completion\",\"schema\":\"alex1770.wordle-events/v1\",\"status\":\"%s\",\"covered_actions\":%lld,\"declared_actions\":%lu}",
++    reason,event_action_values,(unsigned long)testwords.size());
++  events_emit(buf);
++}
++
+ int main(int ac,char**av){
+   printf("Commit %s\n",COMMITDESC);
+   int beta=infinity;
+   const char*treefn=0,*treestyle=0,*analyse=0,*toplist=0,*joblist=0,*topword=0;
+   vector<string> loadcache_old,loadcache_new;
+
+-  while(1)switch(getopt(ac,av,"a:A:b:c:C:deHh:j:r:R:n:N:g:l:L:p:S:st:M:TUw:x:z:")){
++  while(1)switch(getopt(ac,av,"a:A:b:c:C:deE:Hh:j:r:R:n:N:g:l:L:p:S:st:M:TUw:x:z:")){
+     case 'a': wordlist_all_name=strdup(optarg);break;
+     case 'A': analyse=strdup(optarg);break;
+     case 'b': beta=atoi(optarg);break;
+@@ -1269,6 +1353,7 @@
+     case 'C': checkpointinterval=atof(optarg);break;
+     case 'd': depthonly=1;break;
+     case 'e': writestandardscores=true;break;
++    case 'E': eventsfn=strdup(optarg);break;
+     case 'H': hardmode=1;break;
+     case 'h': wordlist_hidden_name=strdup(optarg);break;
+     case 'j': joblist=strdup(optarg);break;
+@@ -1292,9 +1377,11 @@
+     case -1: goto ew0;
+     default: goto err0;
+   }
++  events_open();
+  ew0:;
+   if(optind<ac){
+   err0:
++    events_emit_error("invalid-arguments");
+     fprintf(stderr,"Usage: wordle [options]\n");
+     fprintf(stderr,"\n       === Normal options ===\n\n");
+     fprintf(stderr,"       -a<string> filename for wordlist of allowable guesses\n");
+@@ -1305,6 +1392,7 @@
+     fprintf(stderr,"\n");
+     fprintf(stderr,"       -A<string> (experimental) analyse your play for luck and skill. E.g., -A salet.bbbyb.drone.ybbbg\n");
+     fprintf(stderr,"       -d enables depth-only mode: only care about whether can solve within the prescribed number of guesses; don't care about average number of guesses required\n");
++    fprintf(stderr,"       -E<string> filename for strict JSONL event output (run identity, result, completion)\n");
+     fprintf(stderr,"       -e enables writing of start-up file to current directory (to speed up initialisation)\n");
+     fprintf(stderr,"       -g<int> maximum number of guesses, or max depth; default = 6\n");
+     fprintf(stderr,"       -p<string> filename for strategy tree output (default = no tree output)\n");
+@@ -1335,6 +1423,19 @@
+   initstuff(loadcache_old,loadcache_new,treestyle);
+   if(nth==-1)nth=testwords.size();
+   exhaust=(nth>=int(testwords.size()));
++  events_open();
++  {
++    char idbuf[512],betabuf[32];
++    if(beta==infinity)snprintf(betabuf,sizeof(betabuf),"null");
++    else snprintf(betabuf,sizeof(betabuf),"%d",beta);
++    snprintf(idbuf,sizeof(idbuf),
++      "{\"type\":\"run_identity\",\"schema\":\"alex1770.wordle-events/v1\",\"commitdesc\":%s,\"hardmode\":%d,\"exhaustive\":%s,"
++      "\"maxguesses\":%d,\"beta\":%s,\"all_count\":%lu,\"hidden_count\":%lu,\"depthonly\":%d}",
++      json_escape(COMMITDESC).c_str(),hardmode,exhaust?"true":"false",maxguesses,
++      betabuf,
++      (unsigned long)testwords.size(),(unsigned long)hiddenwords.size(),depthonly);
++    events_emit(idbuf);
++  }
+
+   printf("Mode: %s\n",hardmode==0?"Easy":(hardmode==1?"Hard":"Ultrahard"));
+   printf("nth = %d\n",nth);
+@@ -1359,6 +1460,7 @@
+   fflush(stdout);
+   if(joblist&&(toplist||topword)){fprintf(stderr,"Can't use -j with -t or -w options\n");exit(1);}
+   double cpu0=cpu();
++  event_cpu0=cpu0;
+   int i,o,nh;
+   if(analyse)analyseplay(analyse); else {
+     if(treefn){
+@@ -1373,11 +1475,14 @@
+       int best;
+       state state;
+       o=minoverwords_toplevel(toplist,joblist,topword,beta,&best,&state);
++      event_bestfirst=best;
+       printf("Best first guess = %s\n",best>=0?testwords[best].c_str():"no-legal-guess");
+       nh=state.hwsubset.size();
+     }
+     printf("Best first guess score %s= %d\n",depthonly&&o<infinity?"<":"",o);
+     if(!depthonly&&o<infinity/2)printf("Average guesses reqd using best first guess = %.4f\n",o/double(nh));
++    event_objective=o;
++    event_has_result=true;
+   }
+   printf("Nodes used = %lld\n",totentries);
+   double cpu1=cpu()-cpu0;
+@@ -1385,5 +1490,8 @@
+   for(i=0;i<=maxguesses;i++)if(cachereads[i]||entrystats[i][0])printf("Depth %2d: Entries = %12lld %12lld %12lld    Cache writes reads misses = %12lld %12lld %12lld\n",i,entrystats[i][0],entrystats[i][1],entrystats[i][2],cachewrites[i],cachereads[i],cachemiss[i]);
+   writeoptstats();
+   if(checkpointinterval>=0)savecache();
++  event_cpu1=cpu();
++  events_emit_result();
++  events_emit_completion("completed");
+   prtim();
+ }

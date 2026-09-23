@@ -1,0 +1,68 @@
+# OpenWordle-v1 benchmark protocol (frozen). Every dimension of comparison is
+# pinned here before any model work; unknown sections and fields fail closed
+# in src/deep_green/benchmark.py.
+
+[identity]
+benchmark_id = "openwordle-v1"
+protocol_schema = "wordle.protocol/v1"
+corpus_manifest_sha256 = "d4ce25c6b7dfa97b28199cd11e85e0c9872bcdd545fc4228b83ebdfe0009db12"
+
+[sources]
+ledger = "benchmarks/openwordle-v1/sources.toml"
+scowl_v1_commit = "5ef55f9c42730ebe4394a78b77855468a6f15dd2"
+scowl_v1_sha256 = "933cd8edab9297fc8cb6358d7cb3d05a50371107d1431af61de09eaa875043ac"
+wordnet_3_version = "3.0"
+wordnet_3_sha256 = "640db279c949a88f61f851dd54ebbb22d003f8b90b85267042ef85a3781d3a52"
+
+[corpus]
+candidate_dir = "artifacts/corpus/openwordle-v1-candidate"
+manifest = "manifest.json"
+salt_hex = "6f70656e776f72646c652d7631"
+accepted_guesses_count = 5022
+primary_answer_count = 2095
+broad_answer_count = 3048
+
+[action_space]
+kind = "accepted_guesses"
+count = 5022
+
+[tiers]
+sizes = [512, 1024, 2048, 2095]
+ranking = "sha256(domain=b'tier' || salt || word_bytes) ascending"
+
+[ah_split]
+fractions = { train = 0.8, dev = 0.1, test = 0.1 }
+counts = { train = 1677, dev = 209, test = 209 }
+
+[rules]
+document = "benchmarks/rules/openwordle-rules-v1.json"
+ruleset_id = "openwordle-rules-v1"
+feedback_profile_id = "wordle-feedback-v1"
+legality_profiles = ["normal", "nyt-standard-hard"]
+sha256 = "22af8897e57135b68b0c9178fc79a872e27d865085387dff595ddf4ea9f615cc"
+
+[prior]
+document = "benchmarks/openwordle-v1/priors/uniform-v1.json"
+prior_id = "uniform-v1"
+distribution = "uniform"
+support = "answers/primary-2095.txt"
+sha256 = "989c2cc5050c9b9160d426b6b413f4e010f2af2aa8017bfb46789ea320d2a168"
+
+[harness]
+horizon_turns = 6
+loss_scoring = "turns_to_solve_unsolved_scores_seven"
+objective = "lexicographic_minimize_losses_then_maximize_score7_total_then_minimize_worst_score"
+tie_order = "lowest_canonical_action_index_wins"
+
+[model]
+ladder_widths = [64, 96, 128, 192, 256, 320, 384]
+
+[campaign]
+seeds = [17, 29, 43, 71, 113]
+local_time_limit_hours = 72
+
+[clean_room]
+build_identity = "pinned-linux-container-scowl-build"
+builder_image = "openwordle-scowl-build:pin1"
+base_image_digest = "sha256:abd67ffcfa541b485a3dff59865ab629aa048a6c613e639d36e7456b0b229241"
+script = "tools/corpus/build-linux.sh"

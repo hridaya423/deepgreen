@@ -1,0 +1,23 @@
+[identity]
+benchmark_id = "openwordle-v1"
+rules_sha256 = "22af8897e57135b68b0c9178fc79a872e27d865085387dff595ddf4ea9f615cc"
+prior_id = "uniform-v1"
+action_space_sha256 = "3f8ea3e8e93b775a3716979f65bfe3474ed8fbacbbd9394a01fb93606a7ce59c"
+seed = 17
+
+[identity.certificates.normal]
+path = "artifacts/oracle/openwordle-v1/openwordle-v1.uniform.normal.full-compiled@512/certificate.json"
+sha256 = "ab763d900306a83e9407885d210186db6239778054b1a5290f7f0d8b84abccfe"
+view_id = "openwordle-v1.uniform.normal.full-compiled"
+tier = 512
+
+[identity.certificates.hard]
+path = "artifacts/oracle/openwordle-v1/openwordle-v1.uniform.hard.full-compiled@512/certificate.json"
+sha256 = "2fbb51fd7224f6070fc6c11ad19d9b92364af9cfce489551b8ad81bc6792c269"
+view_id = "openwordle-v1.uniform.hard.full-compiled"
+tier = 512
+
+[train]
+lambda_rank = 0.25
+learning_rate = 1e-2
+batch_examples_per_update = 2

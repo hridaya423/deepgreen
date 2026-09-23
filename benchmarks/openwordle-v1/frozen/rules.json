@@ -1,0 +1,34 @@
+{
+  "alphabet": "abcdefghijklmnopqrstuvwxyz",
+  "feedback": {
+    "green_first_assignment": true,
+    "left_to_right_yellow_assignment": true,
+    "multiplicity_consumption": true,
+    "profile_id": "wordle-feedback-v1"
+  },
+  "legality_profiles": {
+    "normal": {
+      "accepted_membership_only": true,
+      "candidate_consistency_minus_u": false,
+      "preserve_greens": false,
+      "revealed_multiplicity_floor": false
+    },
+    "nyt-standard-hard": {
+      "accepted_membership_only": true,
+      "candidate_consistency_minus_u": false,
+      "gray_reuse_permitted": true,
+      "preserve_greens": true,
+      "revealed_multiplicity_floor": true,
+      "yellow_in_old_position_permitted": true
+    }
+  },
+  "max_rows": 6,
+  "ruleset_id": "openwordle-rules-v1",
+  "schema": "wordle.rules/v1",
+  "tile_marks": {
+    "absent": "b",
+    "correct": "g",
+    "present": "y"
+  },
+  "word_length": 5
+}

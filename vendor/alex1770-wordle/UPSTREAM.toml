@@ -1,0 +1,320 @@
+# Pin record for the vendored alex1770 exact-search Wordle solver.
+# Every upstream file at the pinned commit is recorded here, committed or withheld,
+# so the pin stays complete and auditable. Withheld files are verbatim word lists
+# and precomputed result/tree data the mission forbids committing; the oracle runs
+# on benchmark-provided lists passed with -a/-h instead. Committed files are present
+# byte-identical under this directory; withheld files are recoverable from upstream.
+[upstream]
+url = "https://github.com/alex1770/wordle"
+commit = "8fd3f1bdf884ff6757c24ad1227dc561fab7787d"
+license = "MIT"
+
+[build]
+compiler = "clang++ (Apple Clang; any C++17 toolchain works)"
+flags = ["-std=c++17", "-O3", "-Wall"]
+include_paths = ["compat"]
+
+[build.notes]
+gnu_error_h = "replaced by compat/error.h; same exit contract"
+makefile = "upstream Makefile is informational; builds use clang++ -Icompat directly"
+source_policy = "committed wordle.cpp is the pristine upstream blob; the JSONL event patch applies at build time into the build cache only"
+
+[[patch]]
+path = "patches/events-v1.patch"
+base_sha256 = "a3bd676c581703a63e29bfe5e922cfe1409e5c3b276cd0ddbbe20ca5353d1a93"
+purpose = "adds strict JSONL event output (-E flag): run identity, per-action exact/lower-bound records, checkpoints, result, and completion coverage counts; search semantics untouched"
+
+[[file]]
+path = "LICENSE"
+sha256 = "034490a63dfdaa13787e46e0e38966e009b1a31ece512d616b2dac6be5b97df5"
+status = "committed"
+
+[[file]]
+path = "Makefile"
+sha256 = "b9a879a9f31d401b085f37633eaa0efc63f39c57afe043426e612fab5ba1fecc"
+status = "committed"
+
+[[file]]
+path = "README"
+sha256 = "312451b730790f216bf8f58b2fa2ea5df39d36d7fb935958687ff10165f750e3"
+status = "committed"
+
+[[file]]
+path = "chomp.bighidden.hard.g7.nyt20220215.tree"
+sha256 = "e81db0590574425d42eb07394152c0ba30e47dfb5f71535a8a16b9e1b87e2d53"
+status = "withheld"
+
+[[file]]
+path = "chomp.bighidden.hard.g7.origwordlist.tree"
+sha256 = "c6a382fe2b7d53c99bd773a6ee6b152efd33fa5dec3f7ec5354a08b924e704df"
+status = "withheld"
+
+[[file]]
+path = "compat/error.h"
+sha256 = "66e3d7ed69950adfe2216f54cb2715c88e2cad8c55e0a686dce6dc54e90a6a94"
+status = "committed"
+
+[[file]]
+path = "hard.top101.proven"
+sha256 = "8d742ba53eaf9d675863450bba502d225343d95d40364f50bce182ebbbf38ea3"
+status = "withheld"
+
+[[file]]
+path = "lants.bighidden.nyt20220215.tree"
+sha256 = "b25e0670114983f70d4efa367da3f205c4e3416d663569d89b75c3f20012ea85"
+status = "withheld"
+
+[[file]]
+path = "lants.bighidden.origwords.tree"
+sha256 = "e73d75be95dd32e6baf46348d204a34d33abc025ff8ebc79a99faa6ea14fbb34"
+status = "withheld"
+
+[[file]]
+path = "nextword.py"
+sha256 = "5e6731da364625ffbb62f25b5d0af30daef89952542687cfb04c1bb17607da9f"
+status = "committed"
+
+[[file]]
+path = "normal.n100"
+sha256 = "154d0daf21033af88efb5024a6377039a34d81c4c07cc553da0760725ea46300"
+status = "withheld"
+
+[[file]]
+path = "normal.some3593.proven"
+sha256 = "ab07a908e2c0e06e6f514236b0b013ac3c9510801ac8d8cf37df068a14881cc2"
+status = "withheld"
+
+[[file]]
+path = "normal.top105.proven"
+sha256 = "4702a7c60cb48ff24451195f3f10b36195c5159c23d81ea4ba8e6c5eae070264"
+status = "withheld"
+
+[[file]]
+path = "optimaltree.hardmode.txt"
+sha256 = "8f64edf386f9a9dbe980d8cf5bd88604ed59b015673cbb7dfb64a5040e9b521b"
+status = "withheld"
+
+[[file]]
+path = "optimaltree.hardmode5.txt"
+sha256 = "3009d68a872657867c8f2313ffc71d6e400fa0e16e7fd2044327a2fd1aaafe66"
+status = "withheld"
+
+[[file]]
+path = "optimaltree.normalmode.txt"
+sha256 = "32a8663403a8cee0d83a0fb59f10c66f3c16c96c597080f9a196c9f0a5853259"
+status = "withheld"
+
+[[file]]
+path = "out-nyt20220316-easy-bighidden-g6-depthonly-n250-goodlist"
+sha256 = "e182c1158db2d90e3498564cec9b91a8262e0377e86894fdefca48a30fd04efd"
+status = "withheld"
+
+[[file]]
+path = "palet.hard.nyt20220316.g5.tree"
+sha256 = "ec766ee63e59e191fb69ef721c49d8522399f9a87fddb1b4cdddf011589e0f17"
+status = "withheld"
+
+[[file]]
+path = "palet.hard.origwordlist.g5.tree"
+sha256 = "9ce28047bbafe81da4d6c8cc970ef2a42c3f91cbd44710d3e5917fd4d8789ca0"
+status = "withheld"
+
+[[file]]
+path = "patches/events-v1.patch"
+sha256 = "0fa2154f133bf3cd223cfdeac366d81cad5dceb571e05f8189635da5f3ab5e05"
+status = "committed"
+
+[[file]]
+path = "results_easy_nyt20220215"
+sha256 = "7b91e47c4343201d931afc89f866efc269a6502e30365f9de70c04cbdfb6ec24"
+status = "withheld"
+
+[[file]]
+path = "results_easy_nyt20220316"
+sha256 = "65c91b901aeb7caa0d63b6f8e9dfa5d9f874051322e42f95ae5037e5b19f1ec4"
+status = "withheld"
+
+[[file]]
+path = "results_easy_nyt20220830"
+sha256 = "587cecc7ee0c5786b05eacd05ec06ea3acb5fa7c20b074185bfee717ce84527a"
+status = "withheld"
+
+[[file]]
+path = "results_easy_nyt20230701"
+sha256 = "1838af8d240b8231c4221090563f846a2108f0e48199f13d98f0b467d2bfaba7"
+status = "withheld"
+
+[[file]]
+path = "results_hard_nyt20220215"
+sha256 = "1d262d9ce819d0649dbae9de7a0a6c75d660844d0bdff9bb07825521a71ad4cd"
+status = "withheld"
+
+[[file]]
+path = "results_hard_nyt20220316"
+sha256 = "47f20813dc815b33746394da0f22c19fedc4bf227a5d424fcbf95e35e2b1bbc2"
+status = "withheld"
+
+[[file]]
+path = "results_hard_nyt20220830"
+sha256 = "d163333eefb23e1bc8058db78cc105688f2be6f921a52a4eea5a93ca277e561e"
+status = "withheld"
+
+[[file]]
+path = "results_hard_nyt20230701"
+sha256 = "fdfcf29937f7de9d931ebe758c16430503310556d45a2efae22c3a31ad96edbb"
+status = "withheld"
+
+[[file]]
+path = "results_upperbound250_bighidden_easy_nyt20220215"
+sha256 = "03fb2a40bad8ebdeaa6868490dd624a46224abb887e747050c3e0e0697b1f341"
+status = "withheld"
+
+[[file]]
+path = "salet.easy.nyt20220316.tree"
+sha256 = "9a6e6bc0503a2d5af6db577dc91bcd05bb9905c480b30bd5a447af878521cd1a"
+status = "withheld"
+
+[[file]]
+path = "salet.easy.origwords.tree"
+sha256 = "32a8663403a8cee0d83a0fb59f10c66f3c16c96c597080f9a196c9f0a5853259"
+status = "withheld"
+
+[[file]]
+path = "salet.hard.nyt20220316.tree"
+sha256 = "fb22e1311f253094f657a3aaab55f65a6925c6bda07eb5280f13c65525d69ac1"
+status = "withheld"
+
+[[file]]
+path = "salet.hard.nyt20220830.tree"
+sha256 = "8ea77343cb81f71f44e64ce3ea5ab69b581206e5d8e2949a9fe103445f0e9e31"
+status = "withheld"
+
+[[file]]
+path = "salet.hard.origwordlist.tree"
+sha256 = "b37f7c2473ad74b4c5b0fb4f2d43dc830ad83f7e8330b8d0d23c9185bafafdb5"
+status = "withheld"
+
+[[file]]
+path = "stage.gbgbg.tree"
+sha256 = "a14ba8a357f91927735face47918d8901dc7008f37a1a4804c52e5060e0ac08b"
+status = "withheld"
+
+[[file]]
+path = "tarse.easy.nyt20220830.tree"
+sha256 = "1ce29039638901b7cbd3628a9ff1c35fedd56d1e461caba37649c8fa8edb0ee9"
+status = "withheld"
+
+[[file]]
+path = "tarse.easy.nyt20230701.tree"
+sha256 = "33e47b16ada093028ade90a29c6fc0307e18bd49301c495a973dffcf5f47ac10"
+status = "withheld"
+
+[[file]]
+path = "tarse.hard.nyt20220830.tree"
+sha256 = "f8e5d3da5372fcd7aa96f9591053828644790bb0826f2a76a38f48ff119721fd"
+status = "withheld"
+
+[[file]]
+path = "tarse.hard.nyt20230701.tree"
+sha256 = "0cdf1459171330348e49010244d15b1eb6bcb6b246e00e82df4a403388c2329a"
+status = "withheld"
+
+[[file]]
+path = "thump.bighidden.hard.max7guesses.tree"
+sha256 = "736de5fe0212d304b63aef2bfdc26d22eff6e4d524e31c88855d38b14e1b16d9"
+status = "withheld"
+
+[[file]]
+path = "thump.bighidden.nyt20220316.hard.g7.tree"
+sha256 = "545f2f852c38cabdd9c5357ef09bff0fc896abb44477c9a72d61f96b2c6dcb17"
+status = "withheld"
+
+[[file]]
+path = "twowords-nyt20220316-best11099.txt"
+sha256 = "9d0e0b8b79e9a87f0658cb00a31449dab9f022239cbcc9e73ddb948b5fed7cbb"
+status = "withheld"
+
+[[file]]
+path = "wordle-hard"
+sha256 = "2937c28548848abaeb3da52efa5c9f0c6625a86a77b20c4bf9dbb8869c4dde6f"
+status = "withheld"
+
+[[file]]
+path = "wordle.cpp"
+sha256 = "a3bd676c581703a63e29bfe5e922cfe1409e5c3b276cd0ddbbe20ca5353d1a93"
+status = "committed"
+
+[[file]]
+path = "wordlist_all"
+sha256 = "ba86911aea83d038d53c0999fe6cbe310c8f59d2b79626c73bd0cd0773adc320"
+status = "withheld"
+
+[[file]]
+path = "wordlist_hidden"
+sha256 = "3e443482b78dee0f6f8de4f74dbb67537db781524279b1d40ca3353c592b03ce"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20220215_all"
+sha256 = "48f16611619aa3f9d259d04b9b08d6a24ca28944ab1515c747c0ead6da2ba663"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20220215_hidden"
+sha256 = "c495f6cbc36475358a89e30ac16bd5c0c05073c8c7647bb6c35dd01f7bae6e32"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20220316_all"
+sha256 = "feacc549249b5dcb43e2799fbbcda14ebc33d55904fb15d043779104e60c1579"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20220316_hidden"
+sha256 = "c495f6cbc36475358a89e30ac16bd5c0c05073c8c7647bb6c35dd01f7bae6e32"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20220413_all"
+sha256 = "dfcc8b7d253af3c22670c075db6afe3c31a6d304b415aab8531f5eca220e9636"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20220413_hidden"
+sha256 = "c495f6cbc36475358a89e30ac16bd5c0c05073c8c7647bb6c35dd01f7bae6e32"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20220830_all"
+sha256 = "ba86911aea83d038d53c0999fe6cbe310c8f59d2b79626c73bd0cd0773adc320"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20220830_hidden"
+sha256 = "c495f6cbc36475358a89e30ac16bd5c0c05073c8c7647bb6c35dd01f7bae6e32"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20230401_hidden"
+sha256 = "cdd0aa01bca9583eedf3d6d426f200977634dbb651056a50637d5fd3c1847759"
+status = "withheld"
+
+[[file]]
+path = "wordlist_nyt20230701_hidden"
+sha256 = "3e443482b78dee0f6f8de4f74dbb67537db781524279b1d40ca3353c592b03ce"
+status = "withheld"
+
+[[file]]
+path = "wordlist_orig_all"
+sha256 = "fb66d9b47e0dad70e7c6c886cf76a6f453af3aa75003dcfa129c8326938e7c66"
+status = "withheld"
+
+[[file]]
+path = "wordlist_orig_hidden"
+sha256 = "f40e47975cf360ff9febe7d49c8e285054d8fa3fb9644cea575922060951d6ee"
+status = "withheld"
+
+[[file]]
+path = "UPSTREAM.toml"
+sha256 = "self-referential; excluded by design"
+status = "committed"

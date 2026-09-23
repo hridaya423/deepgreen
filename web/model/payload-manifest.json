@@ -1,0 +1,33 @@
+{
+ "files": {
+  "accepted-guesses.txt": {
+   "bytes": 30132,
+   "role": "public-action-space",
+   "sha256": "3f8ea3e8e93b775a3716979f65bfe3474ed8fbacbbd9394a01fb93606a7ce59c"
+  },
+  "lexicon-indices.npz": {
+   "bytes": 18225,
+   "role": "public-lexicon-indices",
+   "sha256": "20dacb0c1b0a495582872b287384541f8f167982bff9fc615f674e36d83ed1d1"
+  },
+  "model-config.json": {
+   "bytes": 592,
+   "role": "model-config",
+   "sha256": "b0c815e3b6c6d7ab5916aea0ad259423b7230a964e2d63b3ddb6992ec00c5480"
+  },
+  "weights.safetensors": {
+   "bytes": 6203736,
+   "role": "neural-payload",
+   "sha256": "09202c5252d8920efe5153b0fbe23a6c38bca9e4f11cce41d4667318a3e00f45"
+  }
+ },
+ "identity": {
+  "action_space_sha256": "3f8ea3e8e93b775a3716979f65bfe3474ed8fbacbbd9394a01fb93606a7ce59c",
+  "benchmark_id": "openwordle-v1",
+  "inference_class": "numpy-f32-pure-neural",
+  "prior_id": "uniform-v1",
+  "rules_sha256": "22af8897e57135b68b0c9178fc79a872e27d865085387dff595ddf4ea9f615cc",
+  "track": "full-compiled"
+ },
+ "schema": "wordle.release-payload/v1"
+}

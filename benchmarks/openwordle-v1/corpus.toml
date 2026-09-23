@@ -1,0 +1,53 @@
+# OpenWordle-v1 corpus recipe. Constants are the corrected preregistration in
+# mission library/frozen-corpus-constants.md (clean Linux SCOWL build + spec-
+# correct hex WordNet parse). Unknown sections or fields fail closed.
+
+[corpus]
+benchmark_id = "openwordle-v1"
+
+[source.scowl_v1]
+tag = "rel-2020.12.07"
+commit = "5ef55f9c42730ebe4394a78b77855468a6f15dd2"
+url = "https://codeload.github.com/en-wl/wordlist/tar.gz/5ef55f9c42730ebe4394a78b77855468a6f15dd2"
+download_name = "scowl-v1-rel-2020.12.07-5ef55f9c.tar.gz"
+sha256 = "933cd8edab9297fc8cb6358d7cb3d05a50371107d1431af61de09eaa875043ac"
+license = "SCOWL copyright notice license (permissive with notice retention)"
+license_url = "https://github.com/en-wl/wordlist/blob/v2/Copyright"
+notice = "Copyright notices retained in NOTICE-SCOWL.txt of every candidate tree."
+
+[source.wordnet_3]
+version = "3.0"
+url = "https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz"
+download_name = "WordNet-3.0.tar.gz"
+sha256 = "640db279c949a88f61f851dd54ebbb22d003f8b90b85267042ef85a3781d3a52"
+license = "WordNet 3.0 license (Princeton University, notice-retention terms)"
+license_url = "https://wordnet.princeton.edu/license-and-commercial-use"
+notice = "WordNet 3.0 license text and warranty disclaimer retained in NOTICE-WordNet.txt."
+
+[normalization]
+scowl_sizes_audit = [10, 20, 35]
+scowl_sizes_accepted = [10, 20, 35, 40, 50, 55, 60]
+dialect = "english"
+encoding = "latin-1"
+strip_marked = true
+lowercase = true
+pattern = "[a-z]{5}"
+
+[answers.primary]
+definition = "scowl_audit_35 intersect wordnet_five_letter_hex"
+
+[answers.broad]
+definition = "accepted_guesses intersect wordnet_five_letter_hex"
+
+[tiers]
+sizes = [512, 1024, 2048, 2095]
+ranking = "sha256(domain=tier || salt || word) ascending"
+
+[splits.ah]
+fractions = { train = 0.8, dev = 0.1, test = 0.1 }
+salt_hex = "6f70656e776f72646c652d7631"
+ranking = "sha256(domain=fold || salt || word) ascending; largest-remainder floors; leftover units to train"
+interpretation = "salt_hex is raw bytes via one shared decode path (bytes.fromhex); never reinterpreted as text"
+
+[excluded_sources]
+names = ["esdb-v2", "coca", "nyt-word-lists", "wordfreq"]

@@ -1,0 +1,31 @@
+[identity]
+benchmark_id = "openwordle-v1"
+rules_sha256 = "22af8897e57135b68b0c9178fc79a872e27d865085387dff595ddf4ea9f615cc"
+prior_id = "uniform-v1"
+action_space_sha256 = "3f8ea3e8e93b775a3716979f65bfe3474ed8fbacbbd9394a01fb93606a7ce59c"
+seed = 17
+
+[identity.certificates.normal]
+path = "artifacts/oracle/openwordle-v1/openwordle-v1.uniform.normal.full-compiled@2095/certificate.json"
+sha256 = "0db6e0795abfb95296d7dc899b7e8661e3032b735991fd0d6863d6f398afae5b"
+view_id = "openwordle-v1.uniform.normal.full-compiled"
+tier = 2095
+
+[identity.certificates.hard]
+path = "artifacts/oracle/openwordle-v1/openwordle-v1.uniform.hard.full-compiled@2095/certificate.json"
+sha256 = "b3744c049a834a530e262f2330b9f483371061f74be3b907f56a674be59f8220"
+view_id = "openwordle-v1.uniform.hard.full-compiled"
+tier = 2095
+
+[adaptive]
+campaign_revision = 2
+widths = [256, 320, 384]
+learning_rate = 3e-4
+fine_tune_learning_rate = 3e-5
+fine_tune_threshold = 64
+release_score_scale = 0.000244140625
+gradient_clip_norm = 1.0
+initial_epochs = 200
+dagger_epochs = 100
+max_dagger_rounds = 128
+stall_patience = 3
