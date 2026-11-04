@@ -1535,3 +1535,16 @@ body {
     outline: 2px solid Highlight;
   }
 }
+
+.site-credit {
+  margin-top: 32px;
+  font-size: 13px;
+  color: var(--ink-dim);
+  text-align: center;
+}
+
+.site-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

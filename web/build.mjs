@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import {
   copyFileSync,
   existsSync,
+  readdirSync,
   mkdirSync,
   readFileSync,
   writeFileSync,
@@ -14,6 +15,10 @@ const repo = join(root, "..");
 const dist = join(root, "dist");
 mkdirSync(dist, { recursive: true });
 copyFileSync(join(root, "src/styles.css"), join(dist, "styles.css"));
+// Static files served from the site root (robots.txt, sitemap.xml, og.png).
+for (const name of readdirSync(join(root, "public"))) {
+  copyFileSync(join(root, "public", name), join(dist, name));
+}
 
 // Model payload: prefer the artifacts release locally; fall back to the
 // tracked web/model copy on hosts (e.g. Vercel) where artifacts/ is absent.

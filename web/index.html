@@ -10,7 +10,59 @@
       as="fetch"
       crossorigin
     />
-    <title>Deep Green</title>
+    <title>Deep Green: a tiny neural net that plays optimal Wordle</title>
+    <meta name="description" content="A 6 MB neural network that plays Wordle move for move like a certified optimal solver, seeing only the public board." />
+    <meta name="author" content="Hridya Agrawal" />
+    <link rel="canonical" href="https://deepgreen.hridya.tech/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Deep Green" />
+    <meta property="og:title" content="Deep Green: a tiny neural net that plays optimal Wordle" />
+    <meta property="og:description" content="A 6 MB neural network that plays Wordle move for move like a certified optimal solver, seeing only the public board." />
+    <meta property="og:url" content="https://deepgreen.hridya.tech/" />
+    <meta property="og:image" content="https://deepgreen.hridya.tech/og.png" />
+    <meta property="og:image:alt" content="Deep Green challenge screen with the word CRANE entered" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Deep Green: a tiny neural net that plays optimal Wordle" />
+    <meta name="twitter:description" content="A 6 MB neural network that plays Wordle move for move like a certified optimal solver, seeing only the public board." />
+    <meta name="twitter:image" content="https://deepgreen.hridya.tech/og.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://deepgreen.hridya.tech/#website",
+            "name": "Deep Green",
+            "url": "https://deepgreen.hridya.tech/",
+            "author": { "@id": "https://www.hridya.tech/#person" }
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://deepgreen.hridya.tech/#app",
+            "name": "Deep Green",
+            "url": "https://deepgreen.hridya.tech/",
+            "description": "A 6 MB neural network that plays Wordle move for move like a certified optimal solver, seeing only the public board.",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Any (web browser)",
+            "image": "https://deepgreen.hridya.tech/og.png",
+            "isPartOf": { "@id": "https://deepgreen.hridya.tech/#website" },
+            "author": {
+              "@type": "Person",
+              "@id": "https://www.hridya.tech/#person",
+              "name": "Hridya Agrawal",
+              "url": "https://www.hridya.tech"
+            },
+            "codeRepository": "https://github.com/hridaya423/deepgreen",
+            "sameAs": [
+              "https://github.com/hridaya423/deepgreen",
+              "https://www.hridya.tech/projects/deepgreen"
+            ],
+            "subjectOf": { "@type": "WebPage", "url": "https://www.hridya.tech/projects/deepgreen" },
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          }
+        ]
+      }
+    </script>
     <script>
       (function () {
         var theme;
@@ -28,7 +80,18 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <main style="max-width: 40rem; margin: 0 auto; padding: 48px 24px; font-family: ui-sans-serif, system-ui, sans-serif; line-height: 1.5; color: var(--ink, #092722)">
+        <h1>Deep Green: a neural network that plays optimal Wordle</h1>
+        <p>Deep Green is a 1,550,400-parameter neural network (6.2 MB) that plays Wordle decision for decision like a certified optimal solver. It sees only the public board: past guesses and their colors. It runs in your browser. Enter any of 5,022 words to watch it solve, in normal or hard mode.</p>
+        <p>In the release proof it matched the solver on every position checked, with zero losses in both modes.</p>
+        <p>
+          <a href="https://github.com/hridaya423/deepgreen">Source on GitHub</a> ·
+          <a href="https://www.hridya.tech/projects/deepgreen">Case study</a>
+        </p>
+        <p>Built by <a href="https://www.hridya.tech/projects/deepgreen">Hridya Agrawal</a>.</p>
+      </main>
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

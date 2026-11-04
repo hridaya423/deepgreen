@@ -1549,6 +1549,12 @@ function render(): void {
     main.appendChild(panel);
   }
   shell.appendChild(main);
+  const credit = el("footer", "site-credit");
+  credit.append("Built by ");
+  const creditLink = el("a", "", "Hridya Agrawal") as HTMLAnchorElement;
+  creditLink.href = "https://www.hridya.tech/projects/deepgreen";
+  credit.appendChild(creditLink);
+  shell.appendChild(credit);
   root.appendChild(shell);
   const traceStage = root.querySelector<HTMLElement>(".return-path-stage");
   if (traceStage) {
