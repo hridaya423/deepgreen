@@ -10,7 +10,7 @@ dependencies = [
     "safetensors>=0.5",
     "mlx>=0.32; platform_machine=='arm64' and sys_platform=='darwin'",
     "torch>=2.7; sys_platform!='linux' or platform_machine!='aarch64'",
-    "fastapi==0.116.1",
+    "fastapi==0.162.4",
     "uvicorn==0.35.0",
 ]
 
